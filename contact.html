@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DreamHome Realty</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-home text-primary me-2"></i>DreamHome Realty
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listings.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="page-title">Contact Us</h1>
+                    <p class="page-subtitle">Get in touch with our expert real estate team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-8 mb-5">
+                    <div class="contact-form-card">
+                        <h3 class="mb-4">Send us a Message</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactName" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="contactName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactEmail" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="contactEmail" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactPhone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="contactPhone">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactSubject" class="form-label">Subject</label>
+                                    <select class="form-select" id="contactSubject">
+                                        <option value="">Select a subject</option>
+                                        <option value="buying">Buying Property</option>
+                                        <option value="selling">Selling Property</option>
+                                        <option value="renting">Renting Property</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="viewing">Schedule Viewing</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label">Message *</label>
+                                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell us about your property requirements or any questions you have..." required></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="contactNewsletter">
+                                <label class="form-check-label" for="contactNewsletter">
+                                    Subscribe to our newsletter for property updates
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="mb-4">Get in Touch</h4>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6>Office Address</h6>
+                                <p>123 Real Estate Avenue<br>Downtown District, NY 10001</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6>Phone Number</h6>
+                                <p>+1 (555) 123-4567<br>+1 (555) 123-4568</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6>Email Address</h6>
+                                <p>info@dreamhome.com<br>sales@dreamhome.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6>Business Hours</h6>
+                                <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat - Sun: 10:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="social-contact mt-4">
+                            <h6>Follow Us</h6>
+                            <div class="social-links">
+                                <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="whatsapp-link mt-4">
+                            <a href="https://wa.me/15551234567" class="btn btn-success w-100">
+                                <i class="fab fa-whatsapp me-2"></i>Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="text-center mb-4">Find Our Office</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5473326693533!2d-74.00425568459598!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1642089365482!5m2!1sen!2sus" 
+                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h3 class="section-title">Meet Our Team</h3>
+                    <p class="section-subtitle">Professional agents ready to help you</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="team-card text-center">
+                        <img src="https://images.pexels.com/photos/3760514/pexels-photo-3760514.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Agent" class="team-avatar">
+                        <h5>John Smith</h5>
+                        <p class="text-muted">Senior Property Advisor</p>
+                        <p>15+ years experience in luxury properties</p>
+                        <div class="team-contact">
+                            <a href="tel:+15551234567" class="btn btn-outline-primary btn-sm me-2">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="mailto:john@dreamhome.com" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="team-card text-center">
+                        <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Agent" class="team-avatar">
+                        <h5>Sarah Johnson</h5>
+                        <p class="text-muted">Commercial Specialist</p>
+                        <p>Expert in commercial and investment properties</p>
+                        <div class="team-contact">
+                            <a href="tel:+15551234568" class="btn btn-outline-primary btn-sm me-2">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="mailto:sarah@dreamhome.com" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="team-card text-center">
+                        <img src="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Agent" class="team-avatar">
+                        <h5>Michael Chen</h5>
+                        <p class="text-muted">Residential Expert</p>
+                        <p>Specializes in family homes and first-time buyers</p>
+                        <div class="team-contact">
+                            <a href="tel:+15551234569" class="btn btn-outline-primary btn-sm me-2">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="mailto:michael@dreamhome.com" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>DreamHome Realty</h5>
+                    <p>Your trusted partner in finding the perfect property. We're committed to making your real estate dreams come true.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="listings.html" class="text-white-50">Properties</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Buy Property</a></li>
+                        <li><a href="#" class="text-white-50">Sell Property</a></li>
+                        <li><a href="#" class="text-white-50">Rent Property</a></li>
+                        <li><a href="#" class="text-white-50">Property Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6>Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li class="text-white-50"><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</li>
+                        <li class="text-white-50"><i class="fas fa-envelope me-2"></i>info@dreamhome.com</li>
+                        <li class="text-white-50"><i class="fas fa-map-marker-alt me-2"></i>123 Real Estate Ave, City, State</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 DreamHome Realty. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to Your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="registerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPhone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="registerPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
